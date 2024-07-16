@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('AirFinal.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+}
+
+.container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebyside{
+    width: 80%;
+    padding-left: 200px;
+    display: flex;
+    gap: 0.5rem;
+}
+header {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.hidden_body{
+    display: none;
+}
+
+header nav, .hidden_body nav {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 22px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.hidden_body nav {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+header nav ul, .hidden_body nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden_body nav ul{
+    gap: 1rem;
+}
+
+header nav ul li img{
+    height: 40px;
+    width: 40px;
+}
+
+header nav ul li a , .hidden_body nav ul li a{
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.hidden_body nav ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2a496c;
+    border-radius: 8px;
+    background-color: rgba(212, 205, 205, 0.8);
+}
+
+.hidden_body nav ul li a img{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+
+}
+
+header .search-bar, .hidden_body .header-top .search-bar {
+    width: 40%;
+    padding: 2px;
+    border: solid white 2px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.hidden_body .header-top .search-bar {
+    width: 90%;
+}
+
+header .search-bar input, .hidden_body .header-top .search-bar input {
+    padding: 0.5rem;
+    width: 100%;
+    border: solid rgba(255, 255, 255, 0.0001) 1px; 
+    background-color: rgba(255, 255, 255, 0.01);
+    color: #fff;
+}
+
+header .search-bar button, .hidden_body .header-top .search-bar button{
+    padding: 2px;
+    border-radius: 4px;
+    border: solid rgba(255, 255, 255, 0.0001) 1px; 
+    background-color: rgba(239, 236, 236, 0.132);
+}
+
+
+header .search-bar img, .hidden_body .header-top .search-bar img{
+    height: 20px;
+    width: 20px;
+}
+
+.booking-form {
+    width: 350px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: rgba(212, 205, 205, 0.8);
+    color: #3a74b6;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.booking-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.booking-form .form-row .form-group {
+    width: 45%;
+}
+
+
+.container h1 {
+    font-size: 45px;
+    margin: 0px;
+    background-image: linear-gradient(to bottom, #bda7ac, #503f3c, #bda7ac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container p{
+    display: none;
+    font-size: 45px;
+    margin: 0px;
+    background-image: linear-gradient(to bottom, #bda7ac, #503f3c, #bda7ac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sidebyside h1{
+    background-image: linear-gradient(to bottom,  #503f3c, #503f3c,#a69c9e, #bda7ac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+.booking-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.booking-form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.booking-form .form-group select,
+.booking-form .form-group input {
+    background-color: rgba(239, 236, 236, 0.132);
+    color: #3a74b6;
+    width: 100%;
+    font-size: 14px;
+    padding: 0.5rem;
+    border: 2px solid #3a74b6;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b3aaab;
+    color: #3a74b6;
+    box-shadow: 10px 10px 10px #9a9394;
+    cursor: pointer;
+}
+
+.booking-form .icon-select select {
+    padding-left: 30px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+}
+
+.booking-form .icon-select select#from {
+    background-image: url('PlaneDeparture.png');
+}
+
+.booking-form .icon-select select#to {
+    background-image: url('PlaneArrival.png');
+}
+
+.booking-form .icon-select select#passengers {
+    background-image: url('Users.png');
+}

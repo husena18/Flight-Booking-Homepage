@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="changed.css">
+  </head>
+  <body>
+  <!-- Main Header -->
+    <header>
+      <nav>
+        <ul>
+          <li><img src="Logo.png" /></li>
+          <li><a href="#"><b>All Flights</b></a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">My Trips</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button><img src="Search.png" alt="Search Logo" /></button>
+        </div>
+      </nav>
+    </header>
+    <!-- Mobile Header -->
+    <div class="hidden_body">
+      <div class="header-top">
+          <img src="Logo.png" alt="Logo">
+          <div class="search-bar">
+              <input type="text" placeholder="Search">
+              <button><img src="Search.png" alt="Search Logo"></button>
+          </div>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="#"><img src="Flighticon.png" alt=""><b>All Flights</b></a></li>
+              <li><a href="#"><img src="schedule.png" alt="">Schedule</a></li>
+              <li><a href="#"><img src="bag.png" alt="">My Trips</a></li>
+              <li><a href="#"><img src="contact-us.png" alt="">Contact us</a></li>
+          </ul>
+      </nav>
+  </div>
+    <div class="container">
+      <h1><b><i>Fly smarter,</i></b></h1>
+      <p><b><i>Book Faster!</i></b></p>
+      <div class="sidebyside">
+        <main>
+          <div class="booking-form">
+            <h4>Search Flights</h4>
+            <form>
+              <div class="form-group icon-select">
+                <label for="from">From</label>
+                <select id="from">
+                  <option value="BOM">Mumbai (BOM)</option>
+                </select>
+              </div>
+              <div class="form-group icon-select">
+                <label for="to">To</label>
+                <select id="to">
+                  <option value="YOW">Ottawa (YOW)</option>
+                </select>
+              </div>
+              <div class="form-row">
+              <div class="form-group icon-select">
+                <label for="departure">Departure</label>
+                <input type="date" id="departure" value="2024-07-16" />
+              </div>
+              <div class="form-group">
+                <label for="class">Class</label>
+                <select id="class">
+                  <option value="economy">Economy</option>
+                </select>
+              </div>
+            </div>
+              <div class="form-group icon-select">
+                <label for="passengers">Passengers</label>
+                <select id="passengers">
+                  <option value="1Adult2Children">1 Adult, 2 Children</option>
+                </select>
+              </div>
+              <button type="button" onclick="bookNow()">Book Now</button>
+            </form>
+          </div>
+        </main>
+        <h1><i><b>Book Faster!</i></b></h1>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
